@@ -1,7 +1,0 @@
-{
-  "name": "proyectoPPS",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
