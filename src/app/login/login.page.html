@@ -1,0 +1,26 @@
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title class="card-title">Iniciar sesion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form (ngSubmit)="login()">
+          <ion-item class="input-item">
+            <ion-input [(ngModel)]="user.email" name="email" type="text" placeholder=" Usuario"></ion-input>
+          </ion-item>
+
+          <ion-item class="input-item">
+            <ion-input [(ngModel)]="user.password" name="password" type="password" placeholder=" Contraseña"></ion-input>
+          </ion-item>
+
+          <button expand="full" (click)="login()" class="login-button">Aceptar</button>
+        </form>
+
+        <ion-text color="danger" *ngIf="errorMessage">
+          <p><br>{{ errorMessage }}</p>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

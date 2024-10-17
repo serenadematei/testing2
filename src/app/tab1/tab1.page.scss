@@ -1,0 +1,49 @@
+ion-header {
+    --background: #f8f9fa; // Color de fondo del header, similar al del login si es blanco
+    --border-color: #dee2e6; // Color del borde del header, similar al del login
+    --color: #343a40; // Color del texto del header, puedes ajustarlo si usas un color diferente en login
+  
+    ion-toolbar {
+      --background:#cf8fb7;/* Color de fondo */ // Color de fondo de la barra, igual al del botón de login en el login page
+      --color: color: #2b2a2a;// #ffffff; /* Color del texto */
+      ion-title {
+        font-size: 16px; // Tamaño del título
+        font-weight: bold; // Peso de la fuente
+      }
+    }
+  }
+  
+  ion-content {
+    --background: none; /* Elimina el fondo por defecto para que la imagen se muestre */
+    --padding: 16px; // Padding para mantener consistencia con el padding de login
+    background: url('/assets/fondo1.jpg') no-repeat center center/cover;
+  
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2b2a2a;
+     // font-size: 1.2rem; // Tamaño del texto
+      //color: #343a40; // Color del texto, consistente con el texto del login
+      text-align: center; // Centrar el texto
+      margin-top: 20px; // Espacio superior para separar del contenido superior
+     // font-weight: 500; // Peso de la fuente
+    }
+  }
+
+  .logout-button{
+      width: 100%;
+      background-color: #c3649f;/* Color de fondo */
+      border-radius: 30px;
+      padding: 12px 20px; /* Espaciado interno */
+      font-size: 16px; /* Tamaño de fuente */
+      font-weight: bold; /* Peso de la fuente */
+      --color: #ffffff; /* Color del texto */
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para el color y el tamaño */
+  }
+
+  .logout-button:hover,
+.logout-button:focus {
+  background-color: #2b7070; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Escala el botón ligeramente para darle un efecto de zoom */
+  box-shadow: 0 4px 8px rgba(194, 60, 60, 0.3); /* Sombra para un efecto de profundidad */
+}
